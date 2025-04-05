@@ -59,9 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- DATA (REPLACE ALL PLACEHOLDERS!) ---
     const projectData = {
-        proj1: { imgSrc: 'images/wablaz1.png', title: 'E-Commerce Website', date: 'October 2023', technologies: 'React, Node.js, Express, MongoDB, CSS', description: 'Developed a full-stack e-commerce platform featuring product listings, user authentication, shopping cart functionality, and admin management panels. Focused on RESTful API design and responsive UI.', link: '#' },
-        proj2: { imgSrc: 'images/project2-full.png', title: 'Task Management App', date: 'November 2023', technologies: 'Flutter, Dart, Firebase Auth, Firestore', description: 'Created a cross-platform mobile application for organizing tasks and projects. Implemented real-time updates using Firebase Firestore and secure user login via Firebase Authentication.', link: null },
-        proj3: { imgSrc: 'images/project3-full.png', title: 'Data Visualization Dashboard', date: 'January 2024', technologies: 'Python, Flask, Pandas, Plotly.js', description: 'Built an interactive web dashboard to visualize complex datasets. Used Flask for the backend API and Plotly.js for dynamic charts and graphs, enabling data exploration.', link: 'https://github.com/andyka-salom/repo-name' } // REPLACE link
+        proj1: { imgSrc: 'images/wablaz1.png', title: 'Notifikasi Whatsapp Website', date: 'Januari 2025', technologies: 'Laravel,Jquery,CSS', description: 'Developed a full-stack e-commerce platform featuring product listings, user authentication, shopping cart functionality, and admin management panels. Focused on RESTful API design and responsive UI.', link: '#' },
+        proj3: { imgSrc: 'images/nitrak3.png', title: 'Monitoring Tender', date: 'November 2024', technologies: 'Laravel, JQuery, Mysql', description: 'An interactive dashboard to track project progress. Vendor management covering profiles, contracts, and performance. Automated email notifications for deadlines, documents, and project updates. Centralized document management. Multi-level access to ensure data security based on roles. The system enhances transparency, efficiency, and oversight in vendor collaboration processes..', link: null },
+        proj2: { imgSrc: 'images/project3-full.png', title: '', date: 'January 2024', technologies: 'Python, Flask, Pandas, Plotly.js', description: 'Built an interactive web dashboard to visualize complex datasets. Used Flask for the backend API and Plotly.js for dynamic charts and graphs, enabling data exploration.', link: 'https://github.com/andyka-salom/repo-name' } // REPLACE link
     };
     const certificationData = {
         cert1: {
@@ -69,23 +69,23 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'IT Perbankan',
             issuer: 'Digital Talent Scholarship (digikom)',
             skills: 'Team Building · Teamwork · Web Design · MySQL · PHP · Web Development · Software Development Life Cycle (SDLC) · Laravel · Analytical Skills · Kotlin · Android Development · Research Skills · Software Development · User Experience Design (UED) · Cloud Computing',
-            description: 'Validated foundational understanding of AWS cloud concepts, core services, security best practices, architecture principles, pricing models, and support options.',
+            description: 'Successfully completed an intensive training on IT systems in the banking industry. Covered topics include web and mobile app development using Laravel and Kotlin, database management with MySQL, and applying SDLC principles to deliver secure, user-focused financial solutions.',
             link: '#' // REPLACE validation link or null
         },
         cert2: {
-            imgSrc: 'images/cert-python-full.png', // Full image for modal
-            title: 'Python for Data Science Certificate',
-            issuer: 'Coursera / IBM', // Example Issuer
-            skills: 'Python, Pandas, NumPy, Data Analysis, Visualization',
-            description: 'Completed coursework demonstrating proficiency in using Python libraries like Pandas and NumPy for data manipulation, analysis, and visualization tasks relevant to data science.',
+            imgSrc: 'images/python.jpg', // Full image for modal
+            title: 'Backend-Python(FLASK)',
+            issuer: 'Myskill', // Example Issuer
+            skills: 'Python, Flask, Postgree',
+            description: 'Gained practical experience in building backend systems using Python and Flask, integrating PostgreSQL for data management. Learned to create RESTful APIs and apply best practices in backend development.',
             link: '#' // REPLACE validation link or null
         },
          cert3: {
-            imgSrc: 'images/cert-web-full.png', // Full image for modal
-            title: 'Dicoding: Front-End Web Developer Expert',
-            issuer: 'Dicoding Indonesia',
-            skills: 'HTML, CSS, JavaScript, Performance, PWA, Accessibility',
-            description: 'Achieved expert-level certification covering advanced front-end web development topics including performance optimization, Progressive Web Apps (PWA), accessibility standards, and modern JavaScript techniques.',
+            imgSrc: 'images/golang.png', // Full image for modal
+            title: 'Backend-Golang(Gin)',
+            issuer: 'Myskill',
+            skills: 'Golang, Gin Framework, Postgree',
+            description: 'Completed backend development training using Golang and the Gin framework. Focused on building high-performance APIs, integrating PostgreSQL databases, and applying clean architecture for scalable web services.',
             link: '#' // REPLACE validation link or null
          }
     };
