@@ -1,705 +1,238 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Untree.co">
-  <link rel="shortcut icon" href="favicon.png">
-
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Mono&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-  <link rel="stylesheet" href="css/aos.css">
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    footer .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-    }
-
-    footer .row {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-    }
-
-    footer .col-md-12 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    footer .copyright-text {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    footer .copyright-text p {
-      margin: 0.5em 0;
-    }
-
-    footer .copyright-text a {
-      margin: 0 10px;
-      color: inherit;
-      text-decoration: none;
-    }
-
-    footer .copyright-text a:hover {
-      color: #0077b5;
-    }
-
-    footer .fab {
-      font-size: 1.5em;
-    }
-
-    /* New Styles for Resume Section */
-    #resume-section .section-heading {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    #resume-section .resume-title {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 1rem;
-    }
-
-    #resume-section .resume-item {
-      margin-bottom: 1.5rem;
-      padding: 1rem;
-      border: 1px solid #eee;
-      border-radius: 5px;
-      background-color: #f9f9f9;
-    }
-
-    #resume-section .resume-item h4 {
-      font-size: 1.2rem;
-      font-weight: bold;
-      margin-bottom: 0.5rem;
-    }
-
-    #resume-section .resume-item h5 {
-      font-style: italic;
-      color: #888;
-      margin-bottom: 0.3rem;
-    }
-
-    #resume-section .resume-item p {
-      margin-bottom: 0.5rem;
-    }
-
-    #resume-section .resume-item ul {
-      padding-left: 20px;
-      margin-bottom: 0;
-    }
-
-    /* Equal Height Columns */
-    #resume-section .col-equal-height {
-      display: flex;
-      flex-direction: column;
-    }
-
-    #resume-section .resume-title-wrapper {
-      flex-grow: 0;
-    }
-
-    #resume-section .resume-content {
-      flex-grow: 1;
-    }
-
-    #resume-section .resume-item {
-      margin-bottom: 1.5rem;
-      padding: 1rem;
-      border: 1px solid #eee;
-      border-radius: 5px;
-      background-color: #f9f9f9;
-      flex-grow: 0;
-    }
-  </style>
-  <title>Andyka.salom</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andyka Salom - Portfolio | Informatics Engineering</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
+<body>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
-
-  <div class="lines-wrap">
-    <div class="lines-inner">
-      <div class="lines"></div>
-    </div>
-  </div>
-  <!-- END lines -->
-
-  <div class="site-mobile-menu site-navbar-target">
-    <div class="site-mobile-menu-header">
-      <div class="site-mobile-menu-close">
-        <span class="icofont-close js-menu-toggle"></span>
-      </div>
-    </div>
-    <div class="site-mobile-menu-body"></div>
-  </div>
-
-  <nav class="site-nav dark mb-5 site-navbar-target">
-    <div class="container">
-      <div class="site-navigation">
-        <a href="index.html" class="logo m-0">Andyka.Portfolio<span class="text-primary">.</span></a>
-
-        <ul class="js-clone-nav d-none d-lg-inline-none site-menu float-right site-nav-wrap">
-          <li><a href="#home-section" class="nav-link active">Home</a></li>
-          <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
-          <li class="has-children">
-            <a href="#about-section" class="nav-link">About</a>
-          </li>
-          <li><a href="#resume-section" class="nav-link">Resume</a></li>
-          <li><a href="#services-section" class="nav-link">Services</a></li>
-
-          <li><a href="#contact-section" class="nav-link">Contact us</a></li>
-        </ul>
-
-        <a href="#"
-          class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-inline-block"
-          data-toggle="collapse" data-target="#main-navbar">
-          <span></span>
-        </a>
-
-      </div>
-    </div>
-  </nav>
-
-
-
-  <div class="untree_co-section pb-0" id="home-section">
-    <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-md-7">
-          <h1 class="heading gsap-reveal-hero mb-3"><strong>Andyka<span class="text-primary">.</span> Portfolio</strong></h1>
-          <h2 class="subheading gsap-reveal-hero mb-4">
-            Serifikat & Project
-          </h2>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="untree_co-section untree_co-section-4 pb-0" id="portfolio-section">
-    <div class="container">
-
-
-      <div class="relative">
-        <div class="loader-portfolio-wrap">
-          <div class="loader-portfolio"></div>
-        </div>
-      </div>
-      <div id="portfolio-single-holder"></div>
-
-      <div class="portfolio-wrapper">
-
-        <div id="posts" class="row">
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="portfolio-single-1.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
-              data-id="1">
-              <div class="overlay">
-                <span class="wrap-icon icon-link2"></span>
-                <div class="portfolio-item-content">
-                  <h3>Pakan Asix</h3>
-                  <p>web</p>
-                </div>
-              </div>
-              <img src="images/porto1 (1).png" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="portfolio-single-2.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
-              data-id="2">
-              <div class="overlay">
-                <span class="wrap-icon icon-link2"></span>
-                <div class="portfolio-item-content">
-                  <h3>AirlanggaTalent</h3>
-                  <p>Website Freelance</p>
-                </div>
-              </div>
-              <img src="images/porto1 (2).png" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
-              data-id="3">
-              <div class="overlay">
-                <span class="wrap-icon icon-link2"></span>
-                <div class="portfolio-item-content">
-                  <h3>Layanan FH</h3>
-                  <p>website</p>
-                </div>
-              </div>
-              <img src="images/hukum.png" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="portfolio-single-4.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
-              data-id="3">
-              <div class="overlay">
-                <span class="wrap-icon icon-link2"></span>
-                <div class="portfolio-item-content">
-                  <h3>Airlangga Global Travel</h3>
-                  <p>web</p>
-                </div>
-              </div>
-              <img src="images/agt1.png" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
-          <!-- <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="portfolio-single-5.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
-              data-id="3">
-              <div class="overlay">
-                <span class="wrap-icon icon-link2"></span>
-                <div class="portfolio-item-content">
-                  <h3>Design UI</h3>
-                  <p>web Design</p>
-                </div>
-              </div>
-              <img src="images/design.png" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div> -->
-
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="nitrak.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
-              data-id="1">
-              <div class="overlay">
-                <span class="wrap-icon icon-link2"></span>
-                <div class="portfolio-item-content">
-                  <!-- <h3>Black & White Cubic</h3> -->
-                  <h3>Nitrak</h3>
-                  <p>Full Stack Developer Website</p>
-                </div>
-              </div>
-              <img src="images/nitrak3.png" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="wablaz.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
-              data-id="1">
-              <div class="overlay">
-                <span class="wrap-icon icon-link2"></span>
-                <div class="portfolio-item-content">
-                  <!-- <h3>Black & White Cubic</h3> -->
-                  <h3>Wablazz</h3>
-                  <p>Full Stack Developer Website</p>
-                </div>
-              </div>
-              <img src="images/wablaz.png" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="ourcity.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
-              data-id="1">
-              <div class="overlay">
-                <span class="wrap-icon icon-link2"></span>
-                <div class="portfolio-item-content">
-                  <!-- <h3>Black & White Cubic</h3> -->
-                  <h3>Ourcity</h3>
-                  <p>Full Stack Developer Website</p>
-                </div>
-              </div>
-              <img src="images/ourcity.png" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="dsi.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
-              data-id="1">
-              <div class="overlay">
-                <span class="wrap-icon icon-link2"></span>
-                <div class="portfolio-item-content">
-                  <!-- <h3>Black & White Cubic</h3> -->
-                  <h3>Unair Merdeka</h3>
-                  <p>Mobile Developer</p>
-                </div>
-              </div>
-              <img src="images/dsi (2).png" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="dsi.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
-              data-id="1">
-              <div class="overlay">
-                <span class="wrap-icon icon-link2"></span>
-                <div class="portfolio-item-content">
-                  <!-- <h3>Black & White Cubic</h3> -->
-                  <h3>Python</h3>
-                  <p>Sertifikat</p>
-                </div>
-              </div>
-              <img src="images/python.jpg" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-            <a href="dsi.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
-              data-id="1">
-              <div class="overlay">
-                <span class="wrap-icon icon-link2"></span>
-                <div class="portfolio-item-content">
-                  <!-- <h3>Black & White Cubic</h3> -->
-                  <h3>GOlang</h3>
-                  <p>Sertifikat</p>
-                </div>
-              </div>
-              <img src="images/golang.jpg" class="lazyload  img-fluid" alt="Images" />
-            </a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="untree_co-section pb-0" id="about-section">
-    <div class="container">
-      <div class="row justify-content-center mb-3">
-        <div class="col-lg-7 mx-auto text-center author-wrap">
-          <img src="images/dika.jpg" alt="Image" class="img-fluid rounded-circle mb-3"
-            style="width: 300px; height: 300px;">
-          <h3 class="text-black h5 font-weight-bold mb-2 gsap-reveal-hero">Andyka Salom</h3>
-          <p class="gsap-reveal-hero">Junior Programmer</p>
-          <p>I am a student majoring in Informatics Engineering at Airlangga University. I have a strong interest in the
-            world of technology, specifically in software development. I am committed to completing tasks on time and
-            carrying out my responsibilities with dedication. I also prioritize the principle of honesty in every
-            interaction and work that I do.
-
-            I am motivated to continuously learn new things and keep up with the latest developments in the field of
-            technology. I believe that with a high enthusiasm for learning, I can continue to sharpen my skills and
-            knowledge in technology, such as software development, programming, and artificial intelligence.</p>
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-lg-7">
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="untree_co-section pb-0" id="resume-section">
-    <div class="container">
-      <div class="row mb-4">
-        <div class="col-lg-7 text-center mx-auto">
-          <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Resume</strong></h2>
-          <div class="wave gsap-reveal-hero">
-            <svg>
-              <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
-            </svg>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 col-equal-height" data-aos="fade-up">
-          <div class="resume-title-wrapper">
-            <h3 class="resume-title">Education</h3>
-          </div>
-
-          <div class="resume-item">
-            <h4>Bachelor’s Degree in Informatics Engineering</h4>
-            <h5>2021 - Present</h5>
-            <p><em>Vocational Faculty, Universitas Airlangga</em></p>
-            <p>Currently pursuing a degree in Informatics Engineering with a focus on software development, mobile
-              applications, and web technologies.</p>
-          </div>
-          <h3 class="resume-title">Experience</h3>
-          <div class="resume-item">
-            <h4>Mobile Developer Intern</h4>
-            <h5>Jul 2024 - Present</h5>
-            <p><em>DSID (Direktorat Sistem Informasi & Digitalisasi), Universitas Airlangga</em></p>
-            <ul>
-              <li>API migration and replacement, ensuring seamless integration with updated backend services for improved
-                app performance.</li>
-              <li>Maintained and optimized mobile app code, enhancing stability, fixing bugs, and improving overall
-                efficiency.</li>
-              <li>Redesigned the UI to improve user experience and modernize the app's visual appeal.</li>
-              <li>Developed and integrated new features, expanding app functionality to meet evolving user needs.</li>
-            </ul>
-          </div>
-
-          <div class="resume-item">
-            <h4>Lead Mobile Developer</h4>
-            <h5>Jul 2024 - Dec 2024</h5>
-            <p><em>Sepo - Self Educations For Osteoarthritis & Osteoporosis</em></p>
-            <ul>
-              <li>Developed a mobile application providing educational resources and self-care guidance for individuals
-                with osteoarthritis and osteoporosis.</li>
-              <li>Designed and implemented user-friendly interfaces with accessibility features for elderly users.</li>
-              <li>Implemented a real-time chat system, enabling users to connect instantly with healthcare
-                professionals and support groups.</li>
-            </ul>
-          </div>
-
-          <div class="resume-item">
-            <h4>Project Manager</h4>
-            <h5>Apr 2024 - May 2024</h5>
-            <p><em>Relawan - Mobile Apps</em></p>
-            <ul>
-              <li>Developed a mobile app for coordinating volunteers using real-time GPS tracking and mapping.</li>
-              <li>Integrated real-time GPS tracking to allow users to share and view live locations, enhancing team
-                coordination.</li>
-              <li>Implemented task assignment and progress tracking features for effective volunteer management.</li>
-            </ul>
-          </div>
-        </div>
-
-
-        <div class="col-lg-6 col-equal-height" data-aos="fade-up" data-aos-delay="200">
-          
-
-          
-
-          <div class="resume-item">
-            <h4>Web Developer</h4>
-            <h5>Jul 2024 - Dec 2024</h5>
-            <p><em>Simedi - Jember Regional Public Company Plantation Inventory Website</em></p>
-            <ul>
-              <li>Designed and implemented a robust database architecture to manage plantation inventory data.</li>
-              <li>Collaborated with cross-functional teams to ensure the website met all operational and business
-                requirements.</li>
-              <li>Conducted rigorous testing and debugging to optimize website performance, security, and reliability.
-              </li>
-            </ul>
-          </div>
-          <div class="resume-item">
-            <h4>Web Developer</h4>
-            <h5>Jan 2024 - Mar 2024</h5>
-            <p><em>Silaw - Faculty of Law, Airlangga University Website</em></p>
-            <ul>
-              <li>Developed a comprehensive website integrating multiple functionalities to support faculty operations
-                and student services.</li>
-              <li>Implemented an e-certificate submission system, enabling digital certificate requests and retrieval.
-              </li>
-              <li>Designed and developed a room booking system for managing class and event reservations.</li>
-            </ul>
-          </div>
-
-          <div class="resume-item">
-            <h4>Web Developer</h4>
-            <h5>Jan 2025 - Feb 2025</h5>
-            <p><em>Wagate - Faculty of Law, Airlangga University Website</em></p>
-            <ul>
-              <li>Developed a messaging platform for asynchronous announcements, certificate distribution, and file
-                sharing via the WhatsApp API.</li>
-              <li>Implemented multiple sending options, allowing messages to be sent via saved contacts, manual input,
-                or bulk import from Excel.</li>
-              <li>Integrated automated certificate and file delivery, streamlining academic and organizational
-                communication.</li>
-            </ul>
-          </div>
-
-          <div class="resume-item">
-            <h4>Web Developer</h4>
-            <h5>Mar 2024 - Apr 2024</h5>
-            <p><em>AGT - Airlangga Global Travel Financial Submission Website</em></p>
-            <ul>
-              <li>Developed a financial submission website for streamlining travel-related financial documentation.</li>
-              <li>Implemented a secure submission and approval workflow with multi-level authorization.</li>
-              <li>Developed comprehensive reporting tools to provide management insights into travel expenses and budget
-                allocations.</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-  <div class="untree_co-section pb-0" id="services-section">
-    <div class="container">
-      <div class="row mb-4">
-        <div class="col-lg-7 text-center mx-auto">
-          <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Services</strong></h2>
-          <!-- <p class="gsap-reveal-hero">The Big Oxmox advised her not to do so, because there were thousands of bad Commas.</p> -->
-          <div class="wave gsap-reveal-hero">
-            <svg>
-              <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
-            </svg>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
-          <div class="service text-center">
-            <div class="gsap-reveal-hero mb-3">
-              <span class="icon-service"><img src="images/svg/service-icon-1.svg" alt="Image"
-                  class="img-fluid"></span>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#home">Andyka Salom</a>
             </div>
-            <h3 class="gsap-reveal-hero">Ui/UX Design</h3>
-            <!-- <p class="gsap-reveal-hero">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-          </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
         </div>
+    </header>
 
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-text-content animate-on-scroll fade-in">
+                    <h1>Hi, I'm <span class="highlight">Andyka Salom</span></h1>
+                    <h2>Informatics Engineering Student @ Airlangga University</h2>
+                    <p class="hero-intro">Passionate software development enthusiast focused on creating impactful technology solutions. Dedicated, honest, and continuously learning.</p>
+                     <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://www.linkedin.com/in/andyka-salom/" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/andyka-salom" target="_blank" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a> <!-- REPLACE # -->
+                    </div>
+                </div>
+                 <div class="hero-image-container animate-on-scroll fade-in delay-1">
+                     <div class="hero-image-placeholder">
+                          <img src="images/image.jpg" alt="Andyka Salom Profile Picture"> <!-- REPLACE with your photo path -->
+                     </div>
+                 </div>
+            </div>
+        </section>
 
-        <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
-          <div class="service text-center">
-            <div class="gsap-reveal-hero mb-3">
-              <span class="icon-service"><img src="images/svg/service-icon-8.svg" alt="Image"
-                  class="img-fluid"></span>
+        <!-- About Me Section -->
+        <section id="about" class="about-section section-bg">
+            <div class="container about-container">
+                <div class="about-text animate-on-scroll slide-up">
+                    <h2>About Me</h2>
+                    <p>I am a dedicated Informatics Engineering student at Airlangga University with a deep passion for technology, particularly software development. My commitment lies in delivering tasks punctually and executing responsibilities with integrity.</p>
+                    <p>Honesty is a core principle in all my interactions. I thrive on learning and actively keep pace with technological advancements, aiming to continually enhance my skills in software development, programming, and artificial intelligence.</p>
+                </div>
+                <div class="about-skills animate-on-scroll slide-up delay-1">
+                    <h3>Core Competencies</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-laptop-code"></i> Programming (Java, Python, JS, PHP, Golang, Dart)</li>
+                        <li><i class="fa-brands fa-html5"></i> Web Dev (HTML, CSS, React, Node.js)</li>
+                         <li><i class="fa-brands fa-android"></i> Mobile Dev (Flutter)</li>
+                        <li><i class="fa-solid fa-database"></i> Databases (SQL, MongoDB)</li>
+                        <li><i class="fa-solid fa-brain"></i> AI/ML Basics (Python Libraries)</li>
+                        <li><i class="fa-solid fa-puzzle-piece"></i> Problem Solving & Algorithms</li>
+                        <li><i class="fa-solid fa-users"></i> Collaboration & Communication</li>
+                    </ul>
+                </div>
             </div>
-            <h3 class="gsap-reveal-hero">App Development</h3>
-            <!-- <p class="gsap-reveal-hero">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-          </div>
-        </div>
+        </section>
 
-        <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4">
-          <div class="service text-center">
-            <div class="gsap-reveal-hero mb-3">
-              <span class="icon-service"><img src="images/svg/service-icon-5.svg" alt="Image"
-                  class="img-fluid"></span>
-            </div>
-            <h3 class="gsap-reveal-hero">Website Development</h3>
-            <!-- <p class="gsap-reveal-hero">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-          </div>
-        </div>
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="text-center animate-on-scroll fade-in">Featured Projects</h2>
+                <p class="text-center section-subtitle animate-on-scroll fade-in">A selection of projects showcasing my skills.</p>
+                <div class="projects-grid">
 
-      </div>
-    </div>
-  </div>
+                    <!-- Project 1 (Example) - REPLACE -->
+                    <div class="project-item animate-on-scroll fade-in" data-item-type="project" data-id="proj1">
+                        <img src="images/project1-thumb.png" alt="Project 1 Screenshot"> <!-- REPLACE -->
+                        <div class="project-overlay">
+                            <h4>E-Commerce Website</h4> <!-- REPLACE -->
+                            <div class="project-tags">
+                                <span class="tag">React</span> <span class="tag">Node.js</span> <span class="tag">MongoDB</span> <!-- REPLACE -->
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Project 2 (Example) - REPLACE -->
+                    <div class="project-item animate-on-scroll fade-in" data-item-type="project" data-id="proj2">
+                        <img src="images/project2-thumb.png" alt="Project 2 Screenshot"> <!-- REPLACE -->
+                         <div class="project-overlay">
+                            <h4>Task Management App</h4> <!-- REPLACE -->
+                            <div class="project-tags">
+                                 <span class="tag">Flutter</span> <span class="tag">Firebase</span> <!-- REPLACE -->
+                             </div>
+                        </div>
+                    </div>
 
-  <div class="untree_co-section pb-0">
-    <div class="container">
-      <div class="row mb-4">
-        <div class="col-lg-7 text-center mx-auto">
-          <h2 class="section-heading gsap-reveal-hero mb-0"><strong>My Skillset</strong></h2>
-          <!-- <p class="gsap-reveal-hero">The Big Oxmox advised her not to do so, because there were thousands of bad Commas.</p> -->
-          <div class="wave gsap-reveal-hero">
-            <svg>
-              <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
-            </svg>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="0">
-          <div class="progressbar" data-animate="false">
-            <div class="circle" data-percent="80">
-              <div class="number"></div>
-              <p class="caption">Php</p>
+                    <!-- Project 3 (Example) - REPLACE -->
+                    <div class="project-item animate-on-scroll fade-in" data-item-type="project" data-id="proj3">
+                        <img src="images/project3-thumb.png" alt="Project 3 Screenshot"> <!-- REPLACE -->
+                         <div class="project-overlay">
+                            <h4>Data Visualization Dashboard</h4> <!-- REPLACE -->
+                             <div class="project-tags">
+                                 <span class="tag">Python</span> <span class="tag">Flask</span> <span class="tag">Plotly</span> <!-- REPLACE -->
+                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more project items here if needed -->
+
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="100">
-          <div class="progressbar" data-animate="false">
-            <div class="circle" data-percent="80">
-              <div class="number"></div>
-              <p class="caption">Java</p>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section section-bg">
+            <div class="container">
+                <h2 class="text-center animate-on-scroll fade-in">Licenses & Certifications</h2>
+                <p class="text-center section-subtitle animate-on-scroll fade-in">Proof of my continuous learning and skill validation.</p>
+                <div class="certifications-grid">
+
+                    <!-- Certification 1 (Example) - REPLACE -->
+                    <div class="certification-item animate-on-scroll fade-in" data-item-type="certification" data-id="cert1">
+                        <img src="images/cert-aws-thumb.png" alt="AWS Certification Thumbnail"> <!-- REPLACE with thumbnail/logo -->
+                        <div class="certification-overlay">
+                            <h4>AWS Cloud Practitioner</h4> <!-- REPLACE -->
+                        </div>
+                    </div>
+
+                    <!-- Certification 2 (Example) - REPLACE -->
+                     <div class="certification-item animate-on-scroll fade-in" data-item-type="certification" data-id="cert2">
+                        <img src="images/cert-python-thumb.png" alt="Python Certification Thumbnail"> <!-- REPLACE with thumbnail/logo -->
+                        <div class="certification-overlay">
+                            <h4>Python for Data Science</h4> <!-- REPLACE -->
+                        </div>
+                    </div>
+
+                    <!-- Certification 3 (Example) - REPLACE -->
+                     <div class="certification-item animate-on-scroll fade-in" data-item-type="certification" data-id="cert3">
+                        <img src="images/cert-web-thumb.png" alt="Web Development Thumbnail"> <!-- REPLACE with thumbnail/logo -->
+                        <div class="certification-overlay">
+                            <h4>Dicoding: Web Dev Expert</h4> <!-- REPLACE -->
+                        </div>
+                    </div>
+
+                    <!-- Add more certification items here -->
+
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="200">
-          <div class="progressbar" data-animate="false">
-            <div class="circle" data-percent="60">
-              <div class="number"></div>
-              <p class="caption">Golang</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+             <div class="container">
+                <h2 class="text-center animate-on-scroll fade-in">Let's Connect</h2>
+                <p class="text-center section-subtitle animate-on-scroll fade-in">Interested in working together or have a question?</p>
+                <div class="contact-content">
+                    <div class="contact-info animate-on-scroll slide-up">
+                        <h3>Contact Details</h3>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:andykasalom@gmail.com">andykasalom@gmail.com</a></p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+6285173012307">+62 851 7301 2307</a></p> <!-- Added tel link -->
+                        <p><i class="fas fa-map-marker-alt"></i> Sidoarjo, Indonesia</p>
+                        <div class="contact-social-links">
+                             <a href="https://www.linkedin.com/in/andyka-salom/" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/andyka-salom" target="_blank" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a> <!-- REPLACE # -->
+                        </div>
+                    </div>
+                    <div class="contact-form-container animate-on-scroll slide-up delay-1">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form" action="YOUR_FORM_ENDPOINT" method="POST"> <!-- CONFIGURE THIS ENDPOINT -->
+                            <div class="form-group"> <input type="text" id="name" name="name" placeholder="Your Name" required> </div>
+                            <div class="form-group"> <input type="email" id="email" name="email" placeholder="Your Email" required> </div>
+                            <div class="form-group"> <input type="text" id="subject" name="subject" placeholder="Subject" required> </div>
+                            <div class="form-group"> <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea> </div>
+                            <button type="submit" class="btn btn-primary btn-submit">Send Message <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                         <p id="form-status"></p>
+                    </div>
+                </div>
             </div>
-          </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+             <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+             <p>© <span id="year"></span> Andyka Salom. Designed with Passion.</p>
         </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="300">
-          <div class="progressbar" data-animate="false">
-            <div class="circle" data-percent="65">
-              <div class="number"></div>
-              <p class="caption">Python</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="300">
-          <div class="progressbar" data-animate="false">
-            <div class="circle" data-percent="50">
-              <div class="number"></div>
-              <p class="caption">Javascript</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="300">
-          <div class="progressbar" data-animate="false">
-            <div class="circle" data-percent="70">
-              <div class="number"></div>
-              <p class="caption">Python</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="overlayer"></div>
-  <div class="loader">
-    <div class="spinner-border" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
-  </div>
-  <footer data-stellar-background-ratio="5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 border-top">
-          <div class="col-md-4 col-sm-6">
-            <div class="copyright-text text-center">
-              <p>
-                <a href="https://github.com/andyka-salom" target="_blank">
-                  <i class="fab fa-github"></i>
+    </footer>
+
+    <!-- Project/Certification Modal -->
+    <div id="item-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <div class="modal-body">
+                <img id="modal-img" src="" alt="Item Image">
+                <h3 id="modal-title"></h3>
+                <div class="modal-details">
+                    <span id="modal-detail-1-container" style="display: none;">
+                        <i id="modal-detail-1-icon" class="fas"></i>
+                        <strong id="modal-detail-1-label"></strong>: <span id="modal-detail-1-value"></span>
+                    </span>
+                     <span id="modal-detail-2-container" style="display: none;">
+                        <i id="modal-detail-2-icon" class="fas"></i>
+                        <strong id="modal-detail-2-label"></strong>: <span id="modal-detail-2-value"></span>
+                    </span>
+                </div>
+                <p id="modal-description"></p>
+                <a id="modal-link" href="#" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" style="display: none;">
+                    <i id="modal-link-icon" class="fas fa-external-link-alt"></i> <span id="modal-link-text">Visit</span>
                 </a>
-                <a href="https://www.linkedin.com/in/andyka-salom" target="_blank">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </p>
-              <p>© Andyka Salom</p>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </footer>
 
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/wave-animate.js"></script>
-  <script src="js/circle-progress.js"></script>
-  <script src="js/imagesloaded.pkgd.js"></script>
-  <script src="js/isotope.pkgd.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/TweenMax.min.js"></script>
-  <script src="js/ScrollMagic.min.js"></script>
-  <script src="js/scrollmagic.animation.gsap.min.js"></script>
-
-
-  <script src="js/custom.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
