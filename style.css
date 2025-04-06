@@ -79,7 +79,6 @@ p { margin-bottom: 1.2rem; color: var(--grey-text); }
 .hero-image-container { display: flex; justify-content: center; align-items: center; }
 .hero-image-placeholder { width: 300px; height: 300px; border-radius: 50%; background: linear-gradient(45deg, var(--secondary-color), var(--primary-color)); display: flex; justify-content: center; align-items: center; box-shadow: 0 10px 30px rgba(74, 144, 226, 0.2); overflow: hidden; /* Important for image */ }
 .hero-image-placeholder i { color: var(--white-color); opacity: 0.8; }
-/* Styles for actual img */
 .hero-image-placeholder img { width: 100%; height: 100%; object-fit: cover; }
 
 /* --- About Section --- */
@@ -90,10 +89,137 @@ p { margin-bottom: 1.2rem; color: var(--grey-text); }
 .about-skills ul li { display: flex; align-items: center; gap: 12px; padding: 10px 0; margin-bottom: 8px; font-weight: 500; border-bottom: 1px dashed var(--border-color); }
 .about-skills ul li i { color: var(--secondary-color); font-size: 1.3rem; width: 25px; text-align: center; flex-shrink: 0; /* Prevent icon shrinking */ }
 
+/* --- Experience Section --- */
+#experience {
+    padding: 100px 0;
+    /* Now using section-bg from HTML */
+}
+
+.experience-timeline {
+    position: relative;
+    max-width: 900px; /* Slightly wider */
+    margin: 3rem auto 0 auto;
+}
+
+/* The vertical timeline line */
+.experience-timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px; /* Position the line */
+    top: 5px;  /* Start slightly below the top */
+    bottom: 5px; /* End slightly above the bottom */
+    width: 3px; /* Thinner line */
+    background-color: var(--border-color);
+    border-radius: 2px;
+    z-index: 0; /* Behind dots */
+}
+
+.experience-item {
+    position: relative;
+    margin-bottom: 40px; /* Increased spacing */
+    padding-left: 55px; /* Space for the dot and connection */
+    transition: transform 0.3s ease;
+}
+.experience-item:hover {
+    transform: translateX(5px); /* Subtle shift on hover */
+}
+
+.experience-item:last-child {
+    margin-bottom: 0; /* No margin on the last item */
+}
+
+/* The timeline dot */
+.experience-dot {
+    content: '';
+    position: absolute;
+    left: 9px; /* (15px line position) - (12px dot width / 2) */
+    top: 5px; /* Align with top of content padding */
+    width: 12px; /* Smaller dot */
+    height: 12px;
+    background-color: var(--secondary-color);
+    border: 3px solid var(--light-bg); /* Match section background */
+    border-radius: 50%;
+    z-index: 1; /* Above the line */
+    box-shadow: 0 0 0 3px var(--secondary-color); /* Outer ring effect */
+}
+
+.experience-content {
+    background-color: var(--white-color);
+    padding: 30px; /* More padding inside the card */
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07); /* Refined shadow */
+    border: 1px solid var(--border-color);
+    position: relative; /* For potential future pseudo-elements */
+}
+
+.experience-title {
+    font-size: 1.5rem; /* Slightly larger title */
+    color: var(--primary-color);
+    margin-bottom: 0.5rem; /* Reduced margin */
+    font-weight: 700;
+}
+
+.experience-meta {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    gap: 10px 25px; /* Row gap, Column gap */
+    margin-bottom: 1.2rem;
+    font-size: 0.95rem;
+    color: var(--grey-text);
+}
+
+.experience-meta span { /* Style for both company and date */
+    display: inline-flex; /* Align icon and text */
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+}
+.experience-meta i {
+    color: var(--secondary-color); /* Accent color for icons */
+    font-size: 1.1em; /* Slightly larger icons */
+    width: 18px; /* Ensure consistent icon width */
+    text-align: center;
+}
+
+.experience-details {
+    margin-top: 1rem;
+}
+.experience-details p { /* Styling for the optional intro paragraph */
+    margin-bottom: 1.3rem;
+    color: var(--dark-text);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.experience-details ul {
+    list-style: none;
+    padding-left: 5px;
+    margin-top: 0.8rem;
+}
+
+.experience-details ul li {
+    margin-bottom: 0.8rem; /* Slightly tighter list */
+    color: var(--grey-text);
+    line-height: 1.7;
+    position: relative;
+    padding-left: 22px; /* Increased space for custom bullet */
+}
+/* Custom bullet point */
+.experience-details ul li::before {
+    content: ''; /* Using a shape instead of text */
+    position: absolute;
+    left: 0;
+    top: 9px; /* Adjust vertical alignment */
+    width: 6px;
+    height: 6px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+}
+
+
 /* --- Projects Section --- */
-#projects { padding: 100px 0; background-color: var(--white-color); }
+#projects { padding: 100px 0; background-color: var(--white-color); } /* No section-bg */
 .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 35px; margin-top: 3rem; }
-.project-item { position: relative; overflow: hidden; border-radius: var(--border-radius); box-shadow: var(--box-shadow); cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; background-color: var(--light-bg); }
+.project-item { position: relative; overflow: hidden; border-radius: var(--border-radius); box-shadow: var(--box-shadow); cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; background-color: var(--light-bg); /* Ensure background for overlay */ }
 .project-item:hover { transform: translateY(-8px); box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1); }
 .project-item img { transition: transform 0.4s ease; aspect-ratio: 16 / 10; object-fit: cover;}
 .project-item:hover img { transform: scale(1.03); }
@@ -103,7 +229,7 @@ p { margin-bottom: 1.2rem; color: var(--grey-text); }
 .tag { background-color: rgba(255, 255, 255, 0.2); color: var(--light-text); padding: 3px 10px; border-radius: 15px; font-size: 0.75rem; font-weight: 500; backdrop-filter: blur(2px); }
 
 /* --- Certifications Section --- */
-#certifications { padding: 100px 0; background-color: var(--light-bg); }
+#certifications { padding: 100px 0; background-color: var(--light-bg); } /* Added section-bg */
 .certifications-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 3rem; }
 .certification-item { position: relative; overflow: hidden; border-radius: var(--border-radius); box-shadow: var(--box-shadow); cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; background-color: var(--white-color); border: 1px solid var(--border-color); display: flex; flex-direction: column; /* To help positioning overlay */ }
 .certification-item:hover { transform: translateY(-8px); box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1); }
@@ -113,7 +239,7 @@ p { margin-bottom: 1.2rem; color: var(--grey-text); }
 .certification-overlay h4 { color: var(--primary-color); font-size: 1rem; margin: 0; font-weight: 600; }
 
 /* --- Contact Section --- */
-#contact { padding: 100px 0; background-color: var(--white-color); }
+#contact { padding: 100px 0; background-color: var(--white-color); } /* No section-bg */
 .contact-content { display: grid; grid-template-columns: 1fr 1.5fr; gap: 50px; margin-top: 3rem; }
 .contact-info h3 { margin-bottom: 1.8rem; }
 .contact-info p { display: flex; align-items: center; gap: 15px; margin-bottom: 1.2rem; color: var(--dark-text); }
@@ -167,10 +293,12 @@ p { margin-bottom: 1.2rem; color: var(--grey-text); }
     .hero-image-placeholder { width: 250px; height: 250px; }
     .hero-socials { justify-content: center; }
     .about-container { grid-template-columns: 1fr; gap: 40px; }
+    .experience-timeline { max-width: 700px; } /* Experience timeline adjust */
     .contact-content { grid-template-columns: 1fr; gap: 30px;}
     .contact-info { margin-bottom: 2rem; text-align: center;}
     .contact-social-links { justify-content: center;}
     .certifications-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .projects-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); } /* Adjust project grid */
 }
 
 @media (max-width: 768px) {
@@ -185,11 +313,68 @@ p { margin-bottom: 1.2rem; color: var(--grey-text); }
     h1 { font-size: 2.4rem; } h2 { font-size: 2rem; }
     .hero-intro { font-size: 1.1rem; }
     .hero-image-placeholder { width: 200px; height: 200px; }
+    #about, #experience, #projects, #certifications, #contact { padding: 80px 0; } /* Reduce padding */
+    .section-subtitle { margin-bottom: 2.5rem; }
+
+    /* Experience Timeline Adjustments */
+    .experience-timeline {
+        padding-left: 0; /* Remove padding to use full width */
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+    .experience-item {
+        padding-left: 45px; /* Adjust space for dot */
+    }
+     .experience-timeline::before {
+        left: 10px; /* Move line closer */
+        width: 2px;
+    }
+    .experience-dot {
+        left: 4px; /* Adjust dot position */
+        width: 10px;
+        height: 10px;
+        border-width: 2px;
+        box-shadow: 0 0 0 2px var(--secondary-color);
+        top: 12px; /* Readjust vertical alignment */
+    }
+    .experience-content {
+        padding: 25px;
+    }
+    .experience-title { font-size: 1.35rem; }
+    .experience-meta { font-size: 0.9rem; gap: 8px 15px;}
+    .experience-details ul li { padding-left: 18px; }
+    .experience-details ul li::before { width: 5px; height: 5px; top: 8px; }
+
     .projects-grid { grid-template-columns: 1fr; }
     .certifications-grid { grid-template-columns: 1fr; } /* Stack certs */
     .modal-content { padding: 25px; width: 95%;}
     .modal-body h3 { font-size: 1.5rem; }
     .back-to-top { right: 15px; bottom: 15px; width: 35px; height: 35px; font-size: 1rem;}
-    #about, #projects, #certifications, #contact { padding: 80px 0; } /* Reduce padding */
-    .section-subtitle { margin-bottom: 2.5rem; }
+}
+
+@media (max-width: 576px) {
+   /* Experience Timeline Adjustments */
+    .experience-item {
+        padding-left: 35px; /* Further reduce space */
+    }
+    .experience-timeline::before {
+        left: 8px;
+    }
+    .experience-dot {
+        left: 3px; /* Adjust dot position */
+        top: 15px; /* Readjust vertical alignment */
+    }
+    .experience-content {
+        padding: 20px;
+    }
+    .experience-title { font-size: 1.25rem; }
+    .experience-meta {
+        flex-direction: column; /* Stack meta info */
+        gap: 8px; /* Reduce gap when stacked */
+        align-items: flex-start; /* Align stacked items left */
+    }
+    .experience-details ul li { padding-left: 15px; }
+    .experience-details ul li::before { top: 9px; } /* Readjust bullet */
+
+    .hero-buttons .btn { padding: 12px 28px; font-size: 0.95rem; } /* Slightly smaller buttons */
 }

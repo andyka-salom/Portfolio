@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andyka Salom - Portfolio | Informatics Engineering</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="icon" type="image/png" href="images/logo.png"> <!-- REPLACE with your logo -->
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,6 +25,7 @@
                 <ul>
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#certifications" class="nav-link">Certifications</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -85,8 +86,72 @@
             </div>
         </section>
 
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section section-bg"> <!-- Added section-bg -->
+            <div class="container">
+                <h2 class="text-center animate-on-scroll fade-in">Work Experience</h2>
+                <p class="text-center section-subtitle animate-on-scroll fade-in">My professional journey and key roles.</p>
+                <div class="experience-timeline">
+
+                    <!-- Experience Item 2: Mobile Internship -->
+                    <div class="experience-item animate-on-scroll slide-up delay-1">
+                        <div class="experience-dot"></div> <!-- Dot element -->
+                        <div class="experience-content">
+                            <h3 class="experience-title">Mobile Developer Intern</h3> <!-- Updated Title -->
+                            <div class="experience-meta">
+                                <span class="experience-company">
+                                    <i class="fas fa-university"></i> DSID, Airlangga University <!-- Updated Company/Org -->
+                                </span>
+                                <span class="experience-date">
+                                    <i class="fas fa-calendar-alt"></i> June 2024 - june 2025 <!-- *** UPDATE THESE DATES *** -->
+                                </span>
+                            </div>
+                            <div class="experience-details">
+                                <p>Contributed to the development and enhancement of mobile applications within the university's information systems directorate (DSID).</p> <!-- New Intro Paragraph -->
+                                <ul>
+                                    <li>Assisted in migrating backend APIs utilized by the mobile application to ensure compatibility and improve data handling.</li> <!-- Updated Bullet -->
+                                    <li>Refined user interface (UI) elements based on feedback and design guidelines for a better user experience.</li> <!-- Updated Bullet -->
+                                    <li>Identified, debugged, and resolved software defects within the mobile application codebase.</li> <!-- Updated Bullet -->
+                                    <li>Implemented new features and functionalities as per project requirements, contributing to enhanced app performance and capabilities.</li> <!-- Updated Bullet -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 1: Freelance - REPLACE WITH YOUR ACTUAL EXPERIENCE -->
+                    <div class="experience-item animate-on-scroll slide-up">
+                        <div class="experience-dot"></div> <!-- Dot element -->
+                        <div class="experience-content">
+                            <h3 class="experience-title">Website Developer Freelance</h3> <!-- Changed Title -->
+                            <div class="experience-meta">
+                                <span class="experience-company">
+                                    <i class="fas fa-briefcase"></i> Various Clients
+                                </span>
+                                <span class="experience-date">
+                                    <i class="fas fa-calendar-alt"></i> Jan 2023 - Present
+                                </span>
+                            </div>
+                            <div class="experience-details">
+                                <p>Contributed to diverse web development projects, focusing on backend logic, database integration, API creation, and potentially frontend aspects for clients requiring scalable solutions.</p> <!-- Minor adjustment in description -->
+                                <ul>
+                                    <li>Developed and maintained server-side applications using Laravel and Golang (Gin framework).</li>
+                                    <li>Designed and implemented efficient database schemas (MySQL, PostgreSQL).</li>
+                                    <li>Built and consumed RESTful APIs for web and mobile application integrations.</li>
+                                    <!-- Optional: Add a frontend-related point if applicable -->
+                                    <li>Implemented responsive user interfaces using HTML, CSS, and JavaScript frameworks.</li>
+                                    <li>Collaborated directly with clients to understand requirements and deliver tailored solutions.</li>
+                                    <li>Managed project timelines and ensured timely delivery of features.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
         <!-- Projects Section -->
-        <section id="projects" class="projects-section">
+        <section id="projects" class="projects-section"> <!-- No section-bg -->
             <div class="container">
                 <h2 class="text-center animate-on-scroll fade-in">Featured Projects</h2>
                 <p class="text-center section-subtitle animate-on-scroll fade-in">A selection of projects showcasing my skills.</p>
@@ -98,7 +163,7 @@
                         <div class="project-overlay">
                             <h4>Notifikasi Whatsapp Website</h4> <!-- REPLACE -->
                             <div class="project-tags">
-                                <span class="tag">Larevel</span> <span class="tag">css</span> <span class="tag">mysql</span> <!-- REPLACE -->
+                                <span class="tag">Laravel</span> <span class="tag">jQuery</span> <span class="tag">CSS</span> <span class="tag">MySQL</span> <!-- REPLACE -->
                             </div>
                         </div>
                     </div>
@@ -107,9 +172,9 @@
                     <div class="project-item animate-on-scroll fade-in" data-item-type="project" data-id="proj2">
                         <img src="images/ourcity.png" alt="Project 2 Screenshot"> <!-- REPLACE -->
                          <div class="project-overlay">
-                            <h4>Task Management App</h4> <!-- REPLACE -->
+                            <h4>OurCity – Task Management for Reporting and Repair</h4> <!-- REPLACE -->
                             <div class="project-tags">
-                                 <span class="tag">Flutter</span> <span class="tag">Firebase</span> <!-- REPLACE -->
+                                <span class="tag">Laravel</span> <span class="tag">jQuery DataTables</span>
                              </div>
                         </div>
                     </div>
@@ -120,67 +185,72 @@
                          <div class="project-overlay">
                             <h4>Monitoring Tender Website</h4> <!-- REPLACE -->
                              <div class="project-tags">
-                                <span class="tag">Laravel</span> <span class="tag">Javascript</span> <span class="tag">mysql</span>
+                                <span class="tag">Laravel</span> <span class="tag">Javascript</span> <span class="tag">MySQL</span>
                              </div>
                         </div>
                     </div>
 
-                    <div class="project-item animate-on-scroll fade-in" data-item-type="project" data-id="proj3">
-                        <img src="images/agt1.png" alt="Project 3 Screenshot"> <!-- REPLACE -->
+                    <!-- Project 4 (Example) - REPLACE -->
+                    <div class="project-item animate-on-scroll fade-in" data-item-type="project" data-id="proj4">
+                        <img src="images/agt1.png" alt="AGT Dashboard Screenshot"> <!-- REPLACE -->
                          <div class="project-overlay">
-                            <h4>Data Visualization Dashboard</h4> <!-- REPLACE -->
+                            <h4>AGT Dashboard</h4> <!-- REPLACE -->
                              <div class="project-tags">
-                                 <span class="tag">Python</span> <span class="tag">Flask</span> <span class="tag">Plotly</span> <!-- REPLACE -->
+                                 <span class="tag">PHP</span> <span class="tag">Javascript</span> <span class="tag">MySQL</span><span class="tag">Laravel</span>
                              </div>
                         </div>
                     </div>
 
-                    <div class="project-item animate-on-scroll fade-in" data-item-type="project" data-id="proj3">
-                        <img src="images/11.png" alt="Project 3 Screenshot"> <!-- REPLACE -->
+                    <!-- Project 5 (Example) - REPLACE -->
+                    <div class="project-item animate-on-scroll fade-in" data-item-type="project" data-id="proj5">
+                        <img src="images/11.png" alt="SI Alumni Screenshot"> <!-- REPLACE -->
                          <div class="project-overlay">
-                            <h4>Data Visualization Dashboard</h4> <!-- REPLACE -->
+                            <h4>Sistem Informasi Alumni</h4> <!-- REPLACE -->
                              <div class="project-tags">
-                                 <span class="tag">Python</span> <span class="tag">Flask</span> <span class="tag">Plotly</span> <!-- REPLACE -->
+                                 <span class="tag">Laravel</span> <span class="tag">Bootstrap</span> <span class="tag">MySQL</span> <!-- REPLACE -->
                              </div>
                         </div>
                     </div>
-                    <div class="project-item animate-on-scroll fade-in" data-item-type="project" data-id="proj3">
-                        <img src="images/dsi (2).png" alt="Project 3 Screenshot"> <!-- REPLACE -->
-                         <div class="project-overlay">
-                            <h4>Data Visualization Dashboard</h4> <!-- REPLACE -->
-                             <div class="project-tags">
-                                 <span class="tag">Python</span> <span class="tag">Flask</span> <span class="tag">Plotly</span> <!-- REPLACE -->
-                             </div>
-                        </div>
-                    </div>
-                    <div class="project-item animate-on-scroll fade-in" data-item-type="project" data-id="proj3">
-                        <img src="images/14.png" alt="Project 3 Screenshot"> <!-- REPLACE -->
-                         <div class="project-overlay">
-                            <h4>Data Visualization Dashboard</h4> <!-- REPLACE -->
-                             <div class="project-tags">
-                                 <span class="tag">Python</span> <span class="tag">Flask</span> <span class="tag">Plotly</span> <!-- REPLACE -->
-                             </div>
-                        </div>
-                    </div>
-                    <div class="project-item animate-on-scroll fade-in" data-item-type="project" data-id="proj3">
-                        <img src="images/taskly.png" alt="Project 3 Screenshot"> <!-- REPLACE -->
-                         <div class="project-overlay">
-                            <h4>Data Visualization Dashboard</h4> <!-- REPLACE -->
-                             <div class="project-tags">
-                                 <span class="tag">Python</span> <span class="tag">Flask</span> <span class="tag">Plotly</span> <!-- REPLACE -->
-                             </div>
-                        </div>
-                    </div>
-                    
 
+                    <!-- Project 6 (Example) - REPLACE -->
+                    <div class="project-item animate-on-scroll fade-in" data-item-type="project" data-id="proj6">
+                        <img src="images/dsi%20(2).png" alt="DSI Landing Page Screenshot"> <!-- REPLACE -->
+                         <div class="project-overlay">
+                            <h4>DSI Mobile Apps</h4> <!-- REPLACE -->
+                             <div class="project-tags">
+                                 <span class="tag">Laravel</span> <span class="tag">CSS</span> <span class="tag">MySQL</span> <!-- REPLACE -->
+                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 7 (Example) - REPLACE -->
+                    <div class="project-item animate-on-scroll fade-in" data-item-type="project" data-id="proj7">
+                        <img src="images/14.png" alt="SI Skripsi Screenshot"> <!-- REPLACE -->
+                         <div class="project-overlay">
+                            <h4>Sistem Informasi Skripsi</h4> <!-- REPLACE -->
+                             <div class="project-tags">
+                                 <span class="tag">Laravel</span> <span class="tag">CSS</span> <span class="tag">MySQL</span> <!-- REPLACE -->
+                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 8 (Example) - REPLACE -->
+                    <div class="project-item animate-on-scroll fade-in" data-item-type="project" data-id="proj8">
+                        <img src="images/taskly.png" alt="Taskly App Screenshot"> <!-- REPLACE -->
+                         <div class="project-overlay">
+                            <h4>Taskly App</h4> <!-- REPLACE -->
+                             <div class="project-tags">
+                                 <span class="tag">Flutter</span> <span class="tag">Firebase</span> <!-- REPLACE -->
+                             </div>
+                        </div>
+                    </div>
                     <!-- Add more project items here if needed -->
-
                 </div>
             </div>
         </section>
 
         <!-- Certifications Section -->
-        <section id="certifications" class="certifications-section section-bg">
+        <section id="certifications" class="certifications-section section-bg"> <!-- Added section-bg -->
             <div class="container">
                 <h2 class="text-center animate-on-scroll fade-in">Licenses & Certifications</h2>
                 <p class="text-center section-subtitle animate-on-scroll fade-in">Proof of my continuous learning and skill validation.</p>
@@ -188,9 +258,9 @@
 
                     <!-- Certification 1 (Example) - REPLACE -->
                     <div class="certification-item animate-on-scroll fade-in" data-item-type="certification" data-id="cert1">
-                        <img src="images/sertif.jpg" alt="AWS Certification Thumbnail"> <!-- REPLACE with thumbnail/logo -->
+                        <img src="images/sertif.jpg" alt="IT Perbankan Certification Thumbnail"> <!-- REPLACE with thumbnail/logo -->
                         <div class="certification-overlay">
-                            <h4>IT PERBANKAN</h4> <!-- REPLACE -->
+                            <h4>IT Perbankan</h4> <!-- REPLACE -->
                         </div>
                     </div>
 
@@ -204,20 +274,18 @@
 
                     <!-- Certification 3 (Example) - REPLACE -->
                      <div class="certification-item animate-on-scroll fade-in" data-item-type="certification" data-id="cert3">
-                        <img src="images/golang.png" alt="Web Development Thumbnail"> <!-- REPLACE with thumbnail/logo -->
+                        <img src="images/golang.png" alt="Golang Certification Thumbnail"> <!-- REPLACE with thumbnail/logo -->
                         <div class="certification-overlay">
                             <h4>Backend-Golang</h4> <!-- REPLACE -->
                         </div>
                     </div>
-
                     <!-- Add more certification items here -->
-
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="contact-section">
+        <section id="contact" class="contact-section"> <!-- No section-bg -->
              <div class="container">
                 <h2 class="text-center animate-on-scroll fade-in">Let's Connect</h2>
                 <p class="text-center section-subtitle animate-on-scroll fade-in">Interested in working together or have a question?</p>
@@ -225,7 +293,7 @@
                     <div class="contact-info animate-on-scroll slide-up">
                         <h3>Contact Details</h3>
                         <p><i class="fas fa-envelope"></i> <a href="mailto:andykasalom@gmail.com">andykasalom@gmail.com</a></p>
-                        <p><i class="fas fa-phone"></i> <a href="tel:+6285173012307">+62 851 7301 2307</a></p> <!-- Added tel link -->
+                        <p><i class="fas fa-phone"></i> <a href="tel:+6285173012307">+62 851 7301 2307</a></p>
                         <p><i class="fas fa-map-marker-alt"></i> Sidoarjo, Indonesia</p>
                         <div class="contact-social-links">
                              <a href="https://www.linkedin.com/in/andyka-salom/" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -265,10 +333,12 @@
                 <img id="modal-img" src="" alt="Item Image">
                 <h3 id="modal-title"></h3>
                 <div class="modal-details">
+                    <!-- Detail Row 1 -->
                     <span id="modal-detail-1-container" style="display: none;">
                         <i id="modal-detail-1-icon" class="fas"></i>
                         <strong id="modal-detail-1-label"></strong>: <span id="modal-detail-1-value"></span>
                     </span>
+                    <!-- Detail Row 2 -->
                      <span id="modal-detail-2-container" style="display: none;">
                         <i id="modal-detail-2-icon" class="fas"></i>
                         <strong id="modal-detail-2-label"></strong>: <span id="modal-detail-2-value"></span>
