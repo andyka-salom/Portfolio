@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cert2: { imgSrc: 'images/python.jpg', title: 'Backend-Python(FLASK)', issuer: 'Myskill', skills: 'Python, Flask, PostgreSQL, RESTful APIs', description: 'Gained practical experience building backend systems using Python and Flask, integrating PostgreSQL for data management. Learned to create RESTful APIs and apply best practices in backend development.', link: null },
         cert3: { imgSrc: 'images/golang.png', title: 'Backend-Golang(Gin)', issuer: 'Myskill', skills: 'Golang, Gin Framework, PostgreSQL, RESTful APIs, Clean Architecture', description: 'Completed backend development training using Golang and the Gin framework. Focused on building high-performance APIs, integrating PostgreSQL databases, and applying clean architecture for scalable web services.', link: null },
         cert4: {
-            imgSrc: 'image/dicoding.png', // Path to the PDF file for the modal
+            imgSrc: 'images/dicoding.png', // Path to the PDF file for the modal
             title: 'Back-End Developer with Node.js & AWS',
             issuer: 'Dicoding Academy',
             skills: 'Node.js, RESTful APIs, Amazon EC2, Postman, Hapi.js, HTTP Protocol, Software Deployment',
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
             link: 'https://www.dicoding.com/certificates/JMZV96OMNPN9' // Validation link
         },
         cert5: {
-            imgSrc: 'image/aws-cloud.png', // Path to the PDF file for the modal
+            imgSrc: 'images/aws-cloud.png', // Path to the PDF file for the modal
             title: 'AWS Cloud Practitioner Essentials',
             issuer: 'Dicoding Academy',
             skills: 'Cloud Computing, AWS, EC2, S3, IAM, CloudFront, CloudWatch, AWS Pricing',
